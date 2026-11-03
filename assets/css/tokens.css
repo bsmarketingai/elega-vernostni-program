@@ -1,0 +1,86 @@
+/* ELEGA – design tokeny (audit elega.cz, 8. 10. 2026).
+   Názvy odpovídají knihovně komponent BSSHOP. Barvy klienta zachovány,
+   upravené kvůli kontrastu jsou označené (původní hodnota v komentáři).
+   Breakpointy: XXS 320 · XS 420 · S 550 · M 820 · L 1000 · XL 1362 · XXL 1745. */
+:root {
+  color-scheme: light;
+  /* Layout: středový logotyp a lineární menu jako na elega.cz, ostré rohy, hodně bílé, fotky nesou náladu. */
+
+  /* Plochy */
+  --c-bg: #FFFFFF;
+  --c-surface: #F7F7F7;
+  --c-surface-2: #EDEDED;
+  --c-img: #EFEFEF;
+  --c-banner: #FFFFFF;
+  --c-topbar: #202020;
+  --c-on-topbar: #FFFFFF;
+  --c-footer: #FFFFFF;
+
+  /* Text */
+  --c-ink: #202020;
+  --c-ink-2: #2B3033;
+  --c-muted: #6B6B6B;
+  --c-subtle: #757575;
+  --c-on-ink: #FFFFFF;
+
+  /* Linky a pole */
+  --c-line: #E6E6E6;
+  --c-line-2: #D9D9D9;
+  --c-field: #8C8C8C;
+
+  /* Značka a akce */
+  --c-primary: #2F7D45;        /* web: #45AA5E (bílý text 2,9 : 1) → 5,1 : 1 */
+  --c-primary-hover: #26683A;
+  --c-on-primary: #FFFFFF;
+  --c-dark: #202020;
+  --c-dark-hover: #3A3A3A;
+  --c-on-dark: #FFFFFF;
+
+  /* Štítky a ceny */
+  --c-badge: #202020;
+  --c-on-badge: #FFFFFF;
+  --c-badge-new: #202020;
+  --c-on-badge-new: #FFFFFF;
+  --c-badge-sale: #C42E0D;
+  --c-on-badge-sale: #FFFFFF;
+  --c-price-sale: #C42E0D;     /* web: cena s kódem PODZIM20 */
+
+  /* Věrnostní klub (nové tokeny) – monochromní, úroveň rozlišuje tvar štítku, ne barva */
+  --c-tier-line: #202020;
+  --c-tier-vip: #202020;     --c-on-tier-vip: #FFFFFF;
+
+  /* Stavy */
+  --c-ok: #3A7D00;           /* web: #49A300 (3,2 : 1) → 5,1 : 1 */
+  --c-warn: #9A5B00;
+  --c-err: #C42E0D;
+  --c-focus: #202020;
+  --c-star: #E8A90E;
+  --c-overlay: rgba(20, 20, 20, 0.45);
+
+  /* Typografie */
+  --font-body: 'Lexend', 'Helvetica Neue', Arial, sans-serif;
+  --fs-xs: 12px;
+  --fs-s: 13px;
+  --fs-m: 14px;
+  --fs-l: 16px;
+  --fs-h3: 18px;
+  --fs-h2: 24px;
+  --fs-h1: 28px;
+
+  /* Tvar – elega.cz má všude ostré rohy */
+  --r-s: 0px;
+  --r-m: 0px;
+  --r-pill: 999px;
+  --shadow-pop: 0 16px 40px rgba(20, 20, 20, 0.16);
+
+  /* Rozvržení */
+  --max: 1745px;
+  --gutter: 16px;
+  --gap: 12px;
+  --section: 40px;
+}
+@media (min-width: 550px) { :root { --gutter: 20px; } }
+@media (min-width: 820px) { :root { --gutter: 24px; --gap: 16px; --section: 56px; --fs-h2: 26px; --fs-h1: 32px; } }
+@media (min-width: 1000px) { :root { --gutter: 32px; --section: 64px; } }
+@media (min-width: 1362px) { :root { --gutter: 40px; --gap: 24px; --section: 80px; --fs-h2: 28px; --fs-h1: 40px; } }
+@media (min-width: 1745px) { :root { --gutter: 48px; } }
